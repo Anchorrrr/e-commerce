@@ -1,0 +1,119 @@
+#top_navbar {
+    /*height: 100%;*/
+    width:100%;
+    position: fixed;
+}
+#nav{
+    background-color: #FFFFFF;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+    overflow: hidden;
+}
+#nav #search_form{
+    margin: auto;
+}
+#nav #search_form table{
+    border-collapse: collapse;
+}
+#nav #search_form td{
+    padding: 0;
+    border: 2px solid #000000;
+}
+#nav #search_form input{
+    line-height: 35px;
+    border: 0;
+    outline: none;
+}
+#nav #search_form button{
+    border: 0;
+    padding: 5px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+#nav #search_form img{
+    width:25px;
+    height: 25px;
+}
+#nav li{
+    list-style: none;
+    float: left;
+}
+#nav .logo{
+    margin-right: 20px;
+}
+#nav #toolTabs .logo{
+    margin-left: 20px;
+}
+#nav #toolTabs{
+    padding-inline-start: 0;
+    padding-inline-end: 40px;
+}
+#nav img{
+    padding: 5px;
+}
+#nav .tab{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 20px 0 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+#nav li a:not(.logo):hover{
+    color: #20386d;
+    border-bottom: 3px solid #20386d;
+}
+#nav #manager:hover {
+    color: #20386d;
+    border-bottom: 3px solid #20386d;
+}
+.cates{
+    font-weight: bold;
+    overflow: hidden;
+    padding: 75px 20px 0 20px;
+    background-color: #FFFFFF;
+}
+.cates:not(#managerTabs) dl{
+    float: left;
+    width: 25%;
+}
+#managerTabs dl{
+    float: left;
+    width: 33.3%;
+}
+.cates dl div{
+    height: 35%;
+    padding: 0 20px 0 20px;
+    text-align: center;
+}
+.cates dt{
+    border-bottom: 3px solid #20386d;
+    /*margin: 0 20px 0 20px;*/
+    padding-bottom: 10px;
+    text-align: center;
+}
+.cates dd{
+    margin: 10px auto 5px auto;
+    width: 40%;
+    /*padding-left: 10px;*/
+    display: inline-block;
+    text-align: center;
+}
+.cates a{
+    text-decoration: none;
+    color: #000000;
+}
+.cates a:hover{
+    color: #20386d;
+    border-bottom: 3px solid #20386d;
+}
+/*mask*/
+#mask {
+    background-color: black;
+    opacity: 0.5;
+}

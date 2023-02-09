@@ -1,0 +1,324 @@
+.main{
+    padding-top: 75px;
+}
+body{
+    margin: 0;
+}
+.catesTag{
+    margin: 10px 0 20px 60px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#productsTable{
+    width: 100%;
+}
+#productsTable a{
+    text-decoration: none;
+    color: #000000;
+}
+.productsRow{
+
+}
+.productUnit{
+    text-align: center;
+    padding-bottom: 70px;
+}
+#pageDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    text-align: center;
+}
+#pageDiv ul {
+    padding: 0;
+    text-align: center;
+}
+#pageDiv li {
+    list-style: none;
+    float: left;
+    border: 2px solid #b0b0b0;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+}
+#pageDiv li:not(.nearPage) {
+    width: 33px;
+}
+#pageDiv .nearPage {
+    width: 70px;
+}
+#pageDiv li a {
+    display: block;
+    text-decoration: none;
+    height: 33px;
+    text-align: center;
+    color: #000000;
+}
+#pageDiv li:not(.nearPage) a {
+    width: 33px;
+}
+#pageDiv li:not(.useless, #curPage):hover {
+    border: 2px solid #20386d;
+}
+#pageDiv a:not(.useless, #curPage):hover {
+    color: #20386d;
+}
+#pageDiv .nearPage a {
+    width: 70px;
+}
+#pageDiv .useless {
+    color: #b0b0b0;
+}
+#pageDiv #curPage {
+    color: #FFFFFF;
+    border-color: #20386d;
+    background-color: #20386d;
+}
+/*productDetail.jsp*/
+.productDetail {
+    width: 100%;
+    padding: 2% 15% 0 10%;
+}
+.productDetail tr {
+    width: 100%;
+}
+.productDetail #images {
+    width: 20%;
+    height: 20%;
+    padding-right: 15%;
+}
+.productDetail #detailInfo {
+    width: 15%;
+    height: 15%;
+}
+#detailInfo hr {
+    background-color: #b0b0b0;
+}
+#buyAdd {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 5% 0 5% 0;
+    /*height: 30px;*/
+    /*line-height: 30px;*/
+}
+#buyAdd button {
+    display: block;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    width: 120px;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+#buy {
+    border-radius: 15px 0 0 15px;
+}
+#addCart {
+    border-radius: 0 15px 15px 0;
+}
+#optDiv {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 5% 0 5% 0;
+}
+#remove {
+    border: 1px solid red;
+    border-radius: 15px;
+    height: 40px;
+    line-height: 40px;
+    width: 120px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+#changeAmount {
+    border: 1px solid green;
+    border-radius: 15px;
+    height: 40px;
+    line-height: 40px;
+    width: 120px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+/*登录注册*/
+.infoForm {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+.infoForm td:not(.tagTd) {
+    padding: 0 0 10px 0;
+    text-align-last: center;
+}
+.infoForm .tagTd {
+    padding: 0 15px 15px 0;
+    /*text-align: justify;*/
+    /*text-justify: distribute-all-lines;*/
+    text-align-last: justify;
+}
+.aDiv {
+    display: flex;
+    justify-content: center;
+}
+.aDiv a {
+    padding: 20px 20px 0 20px;
+}
+/*购物车*/
+#cart {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border-collapse: collapse;
+}
+#cart tr {
+}
+#cart td, #cart th {
+    border-bottom: 1px solid #b0b0b0;
+    padding: 20px 30px 20px 30px;
+}
+#cart a {
+    text-decoration: none;
+    color: #000000;
+}
+#cart button {
+    margin: 0 5px 0 5px;
+}
+#order .t {
+    margin-top: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-collapse: collapse;
+}
+#order th {
+    text-align-last: justify;
+}
+#order th, #order td {
+    padding: 10px 10px 10px 10px;
+}
+#createOrderMsg {
+    margin-top: 20px;
+}
+#orderBtn {
+    margin: 15px 0 100px 0;
+    display: flex;
+    justify-content: center;
+}
+#orderBtn button {
+    font-size: 20px;
+    font-weight: bold;
+}
+.empty {
+    font-size: 30px;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+/*addProduct*/
+#addForm textarea {
+    max-height: 150px;
+    min-height: 150px;
+    max-width: 250px;
+    min-width: 250px;
+}
+#addForm input:not(.btn) {
+    width: 250px;
+}
+#addForm .btn {
+    margin-top: 20px;
+}
+#addForm .leftMargin {
+    padding-left: 100px;
+}
+#userInfo {
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#userInfo th{
+    text-align-last: justify;
+}
+#userInfo button{
+    width: 80px;
+}
+#userInfo th, #userInfo td{
+    padding: 0 10px 10px 10px;
+}
+/*order.jsp*/
+#orderInfoForm table{
+    margin-top: 30px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+#orderInfoForm th {
+    text-align-last: justify;
+}
+#orderInfoForm td:not(.msg), #orderInfoForm th {
+    padding: 10px;
+}
+#orderInfoForm .msg {
+    padding: 0;
+    color: red;
+}
+#orderInfoForm #first {
+    border-top: 1px solid #b0b0b0;
+}
+#orderInfoForm #last {
+    border-bottom: 1px solid #b0b0b0;
+}
+#createOrderMsg {
+    display: flex;
+    justify-content: center;
+}
+#orderInfoTable table {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#orderInfoTable div {
+    display: flex;
+    justify-content: center;
+}
+#payBtn {
+    margin: 15px 0 20px 0;
+}
+/**/
+.msg {
+    font-family: 等线;
+    font-size: 15px;
+    height: 30px;
+    min-width: 230px;
+    padding: 0;
+    color: #313131;
+}
+/*sendEmail.jsp*/
+#sendEmailForm td, #sendEmailForm th {
+    padding: 10px;
+}
+/*recentOrders.jsp*/
+#recentOrders {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border-collapse: collapse;
+}
+#recentOrders tr {
+}
+#recentOrders td, #recentOrders th {
+    border-bottom: 1px solid #b0b0b0;
+    padding: 20px 30px 20px 30px;
+}
+#recentOrders a {
+    color: #20386d;
+}
